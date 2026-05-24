@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SecondGenClass" format=3 uid="uid://b604ldjx6ekx4"]
+
+[ext_resource type="Script" uid="uid://c4eujcjv25ax4" path="res://Scripts/SecondGenClass.gd" id="1_vqbjy"]
+
+[resource]
+script = ExtResource("1_vqbjy")
+class_title = "Overclocker"
+role_description = "High-risk, QTE-dependent burst damage."
+max_hp = 110
+current_hp = 110
+base_str = 14
+base_dex = 14
+base_int = 2
+metadata/_custom_type_script = "uid://c4eujcjv25ax4"

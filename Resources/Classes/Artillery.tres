@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SecondGenClass" format=3 uid="uid://dlkewb7j02k22"]
+
+[ext_resource type="Script" uid="uid://c4eujcjv25ax4" path="res://Scripts/SecondGenClass.gd" id="1_xwweh"]
+
+[resource]
+script = ExtResource("1_xwweh")
+class_title = "Artillery"
+role_description = "Consistent backline physical damage."
+max_hp = 90
+current_hp = 90
+base_str = 8
+base_dex = 17
+base_int = 5
+metadata/_custom_type_script = "uid://c4eujcjv25ax4"

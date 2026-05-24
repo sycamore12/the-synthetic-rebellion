@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://dihrxu73r8be0"]
+
+[ext_resource type="Script" uid="uid://cmqjkgdy2widn" path="res://Scripts/CombatManager.gd" id="1_2mqg5"]
+
+[node name="CombatScene" type="Node2D" unique_id=1169820138]
+script = ExtResource("1_2mqg5")
+
+[node name="UI_Layer" type="CanvasLayer" parent="." unique_id=1495038383]
+
+[node name="TurnIndicator" type="Label" parent="UI_Layer" unique_id=1583936977]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ActionMenu" type="HBoxContainer" parent="UI_Layer" unique_id=861590844]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BtnAttack" type="Button" parent="UI_Layer/ActionMenu" unique_id=1432269169]
+layout_mode = 2
+text = "Attack"
+
+[node name="BtnBlock" type="Button" parent="UI_Layer/ActionMenu" unique_id=674310534]
+layout_mode = 2
+text = "Block"
+
+[node name="BtnFocus" type="Button" parent="UI_Layer/ActionMenu" unique_id=2109709730]
+layout_mode = 2
+text = "Focus"

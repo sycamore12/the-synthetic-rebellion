@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://dts6wjetqpg8j"]
+
+[ext_resource type="Script" uid="uid://dn7bpb38jli3v" path="res://Scripts/PartyFormation.gd" id="1_lljvq"]
+
+[node name="PartyFormation" type="Control" unique_id=2078278371]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lljvq")
+
+[node name="MainLayout" type="VBoxContainer" parent="." unique_id=538876775]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="MainLayout" unique_id=956761391]
+layout_mode = 2
+text = "Select Your 4 Second-Gens"
+
+[node name="ClassGrid" type="GridContainer" parent="MainLayout" unique_id=593347107]
+layout_mode = 2
+columns = 3
+
+[node name="Class1" type="Button" parent="MainLayout/ClassGrid" unique_id=1663666241]
+layout_mode = 2
+text = "Aegis"
+
+[node name="Class2" type="Button" parent="MainLayout/ClassGrid" unique_id=217214681]
+layout_mode = 2
+text = "Artillery"
+
+[node name="Class3" type="Button" parent="MainLayout/ClassGrid" unique_id=963050507]
+layout_mode = 2
+text = "Diagnostics"
+
+[node name="Class4" type="Button" parent="MainLayout/ClassGrid" unique_id=1615185410]
+layout_mode = 2
+text = "Overclocker"
+
+[node name="Class5" type="Button" parent="MainLayout/ClassGrid" unique_id=1472915639]
+layout_mode = 2
+text = "Cryptographer"
+
+[node name="Class 6" type="Button" parent="MainLayout/ClassGrid" unique_id=796128246]
+layout_mode = 2
+text = "Orchestrator"
+
+[node name="PartySlots" type="HBoxContainer" parent="MainLayout" unique_id=193080364]
+layout_mode = 2
+
+[node name="Slot1" type="Label" parent="MainLayout/PartySlots" unique_id=1713215505]
+layout_mode = 2
+text = "[ Empty ]"
+
+[node name="Slot2" type="Label" parent="MainLayout/PartySlots" unique_id=651748433]
+layout_mode = 2
+text = "[ Empty ]"
+
+[node name="Slot3" type="Label" parent="MainLayout/PartySlots" unique_id=1555221869]
+layout_mode = 2
+text = "[ Empty ]"
+
+[node name="Slot4" type="Label" parent="MainLayout/PartySlots" unique_id=1455918368]
+layout_mode = 2
+text = "[ Empty ]"
+
+[node name="StartRunButton" type="Button" parent="MainLayout" unique_id=431073977]
+layout_mode = 2
+text = "Enter The Slums"
