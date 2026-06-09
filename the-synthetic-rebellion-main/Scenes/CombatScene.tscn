@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://dihrxu73r8be0"]
+
+[ext_resource type="Script" uid="uid://cmqjkgdy2widn" path="res://Scripts/CombatManager.gd" id="1_2mqg5"]
+[ext_resource type="AudioStream" uid="uid://b50o36y6gw35f" path="res://Sound/battle_stage.mp3" id="2_dqj0d"]
+[ext_resource type="Texture2D" uid="uid://cg85snsbgq7em" path="res://Background/Battle Stage.png" id="2_sygbj"]
+
+[node name="CombatScene" type="Node2D" unique_id=1169820138]
+script = ExtResource("1_2mqg5")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="." unique_id=868481551]
+
+[node name="TextureRect" type="TextureRect" parent="BackgroundLayer" unique_id=772458185]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sygbj")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="UI_Layer" type="CanvasLayer" parent="." unique_id=875419738]
+
+[node name="ActionMenu" type="HBoxContainer" parent="UI_Layer" unique_id=861590844]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -169.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="BtnAttack" type="Button" parent="UI_Layer/ActionMenu" unique_id=1432269169]
+layout_mode = 2
+text = "Attack"
+
+[node name="BtnBlock" type="Button" parent="UI_Layer/ActionMenu" unique_id=674310534]
+layout_mode = 2
+text = "Block"
+
+[node name="BtnFocus" type="Button" parent="UI_Layer/ActionMenu" unique_id=2109709730]
+layout_mode = 2
+text = "Focus"
+
+[node name="TurnIndicator" type="Label" parent="UI_Layer" unique_id=1583936977]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Entity" type="CanvasLayer" parent="." unique_id=196261220]
+
+[node name="player 1" type="Sprite2D" parent="Entity" unique_id=1583627035]
+
+[node name="player 2" type="Sprite2D" parent="Entity" unique_id=43547301]
+
+[node name="player 3" type="Sprite2D" parent="Entity" unique_id=612661571]
+
+[node name="player 4" type="Sprite2D" parent="Entity" unique_id=1402090487]
+
+[node name="enemy" type="Sprite2D" parent="Entity" unique_id=1258584997]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=611706403]
+stream = ExtResource("2_dqj0d")
+volume_db = -2.584
