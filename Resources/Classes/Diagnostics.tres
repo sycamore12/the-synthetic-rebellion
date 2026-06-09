@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SecondGenClass" format=3 uid="uid://nxopn3uq72rg"]
+
+[ext_resource type="Script" uid="uid://c4eujcjv25ax4" path="res://Scripts/SecondGenClass.gd" id="1_8wfqs"]
+
+[resource]
+script = ExtResource("1_8wfqs")
+class_title = "Diagnostics"
+role_description = "System repairs and debuff cleansing."
+base_str = 4
+base_dex = 8
+base_int = 18
+metadata/_custom_type_script = "uid://c4eujcjv25ax4"
